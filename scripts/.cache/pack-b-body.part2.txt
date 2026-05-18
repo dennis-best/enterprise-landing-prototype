@@ -1,0 +1,694 @@
+=== FILE: .cursor/skills/gembox-footer/SKILL.md ===
+---
+name: gembox-footer
+description: >-
+  Gembox Footer (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Footer
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Footer](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=85-1791) (`85:1791`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `85:1791` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-illustrations/SKILL.md ===
+---
+name: gembox-illustrations
+description: >-
+  Gembox Illustrations. Notion + Figma. Load with parent gembox-design-system when using this UI.
+---
+
+# Illustrations
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | [Illustrations](https://www.notion.so/35050ba3919d803aa99fffd72d4a34f3) |
+| **Figma page** | [Illustrations](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=9454-13567) (`9454:13567`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `9454:13567` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules (from Notion)
+
+One per page; sizes 320×320 or 270×270 only; Figma instances not PNG dumps.
+
+=== FILE: .cursor/skills/gembox-indicator/SKILL.md ===
+---
+name: gembox-indicator
+description: >-
+  Gembox Indicator (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Indicator
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Indicator](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=85-1506) (`85:1506`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `85:1506` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-input/SKILL.md ===
+---
+name: gembox-input
+description: >-
+  Gembox Input. Notion + Figma. Load with parent gembox-design-system when using this UI.
+---
+
+# Input
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | [Text Inputs](https://www.notion.so/27750ba3919d80cfa545cd5e7891a5e5) |
+| **Figma page** | [Input](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=74-3778) (`74:3778`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `74:3778` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules (from Notion)
+
+States: default, active, disabled, error, optional (only when form declares all others required). Label above; max width **540px**; help below field not placeholder; errors UI/Danger; no native `<select>` where Gembox menu exists.
+
+=== FILE: .cursor/skills/gembox-kebab/SKILL.md ===
+---
+name: gembox-kebab
+description: >-
+  Gembox Kebab (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Kebab
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Kebab](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=6834-139666) (`6834:139666`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `6834:139666` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-layout/SKILL.md ===
+---
+name: gembox-layout
+description: >-
+  Gembox Layout. Notion + Figma. Load with parent gembox-design-system when using this UI.
+---
+
+# Layout
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | [Layout](https://www.notion.so/35250ba3919d810f930df74edcf620cf) |
+| **Figma page** | [Layout](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=7666-4485) (`7666:4485`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `7666:4485` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules (from Notion)
+
+Three layouts only: Split, Full, Shorts — see Figma page. Spacing tokens 4–64px; no invented third column.
+
+=== FILE: .cursor/skills/gembox-loading-screens/SKILL.md ===
+---
+name: gembox-loading-screens
+description: >-
+  Gembox Loading Screens (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Loading Screens
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Loading Screens](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=7828-3291) (`7828:3291`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `7828:3291` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-logos-school-and-company/SKILL.md ===
+---
+name: gembox-logos-school-and-company
+description: >-
+  Gembox Logos (School and Company). Notion + Figma. Load with parent gembox-design-system when using this UI.
+---
+
+# Logos (School and Company)
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | [Logos (School and Company)](https://www.notion.so/23950ba3919d80019cebcbc85c600edb) |
+| **Figma page** | [Logos (School and Company)](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=12466-9324) (`12466:9324`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `12466:9324` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules (from Notion)
+
+5:1 aspect SVG partner marks; size scale XS–XXL per Figma.
+
+=== FILE: .cursor/skills/gembox-menu/SKILL.md ===
+---
+name: gembox-menu
+description: >-
+  Gembox Menu (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Menu
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Menu](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=67-673) (`67:673`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `67:673` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-metadata/SKILL.md ===
+---
+name: gembox-metadata
+description: >-
+  Gembox Metadata (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Metadata
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Metadata](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=2414-113694) (`2414:113694`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `2414:113694` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-modal/SKILL.md ===
+---
+name: gembox-modal
+description: >-
+  Gembox Modal (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Modal
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Modal](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=129-1503) (`129:1503`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `129:1503` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-navigation-bar/SKILL.md ===
+---
+name: gembox-navigation-bar
+description: >-
+  Gembox Navigation Bar (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Navigation Bar
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Navigation Bar](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=72-2126) (`72:2126`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `72:2126` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-pagination/SKILL.md ===
+---
+name: gembox-pagination
+description: >-
+  Gembox Pagination (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Pagination
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Pagination](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=1370-10902) (`1370:10902`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `1370:10902` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-program-cards/SKILL.md ===
+---
+name: gembox-program-cards
+description: >-
+  Gembox Program Cards. Notion + Figma. Load with parent gembox-design-system when using this UI.
+---
+
+# Program Cards
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | [Program Card](https://www.notion.so/21750ba3919d8097b5afe07c31cdaf74) |
+| **Figma page** | [Program Cards](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=2044-110555) (`2044:110555`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `2044:110555` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules (from Notion)
+
+Vertical/horizontal variants; gradient on text over image; grid rules 1–2 horizontal, 3–6 three-col, 7+ four-col; uses Badge, Metadata, Logos, Card 8px radius.
+
+=== FILE: .cursor/skills/gembox-progress/SKILL.md ===
+---
+name: gembox-progress
+description: >-
+  Gembox Progress (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Progress
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Progress](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=68-936) (`68:936`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `68:936` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-rating/SKILL.md ===
+---
+name: gembox-rating
+description: >-
+  Gembox Rating (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Rating
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Rating](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=67-864) (`67:864`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `67:864` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-slat/SKILL.md ===
+---
+name: gembox-slat
+description: >-
+  Gembox Slat (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Slat
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Slat](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=4298-120565) (`4298:120565`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `4298:120565` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules (from Notion)
+
+Collapsible slat shell; top-center drag tab (not left rail); ~540px slot; open `get_design_context` on main set on this page.
+
+=== FILE: .cursor/skills/gembox-spoiler/SKILL.md ===
+---
+name: gembox-spoiler
+description: >-
+  Gembox Spoiler. Notion + Figma. Load with parent gembox-design-system when using this UI.
+---
+
+# Spoiler
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | [Spoiler](https://www.notion.so/21750ba3919d80a8b900dea933b1a927) |
+| **Figma page** | [Spoiler](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=2248-114437) (`2248:114437`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `2248:114437` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules (from Notion)
+
+Line-clamp default 10; View More/Less button with `aria-expanded`; Gembox tertiary + chevrons (not Font Awesome).
+
+=== FILE: .cursor/skills/gembox-stepper/SKILL.md ===
+---
+name: gembox-stepper
+description: >-
+  Gembox Stepper (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Stepper
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Stepper](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=7905-10217) (`7905:10217`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `7905:10217` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-switches/SKILL.md ===
+---
+name: gembox-switches
+description: >-
+  Gembox Switches (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Switches
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Switches](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=9262-51629) (`9262:51629`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `9262:51629` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-table/SKILL.md ===
+---
+name: gembox-table
+description: >-
+  Gembox Table (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Table
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Table](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=8672-75216) (`8672:75216`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `8672:75216` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-tabs/SKILL.md ===
+---
+name: gembox-tabs
+description: >-
+  Gembox Tabs (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Tabs
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Tabs](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=1776-106163) (`1776:106163`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `1776:106163` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-tile-button/SKILL.md ===
+---
+name: gembox-tile-button
+description: >-
+  Gembox Tile button (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Tile button
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Tile button](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=5463-1815) (`5463:1815`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `5463:1815` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-toast/SKILL.md ===
+---
+name: gembox-toast
+description: >-
+  Gembox Toast (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Toast
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Toast](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=58-117) (`58:117`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `58:117` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-tooltip/SKILL.md ===
+---
+name: gembox-tooltip
+description: >-
+  Gembox Tooltip (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Tooltip
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Tooltip](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=68-453) (`68:453`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `68:453` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-typography/SKILL.md ===
+---
+name: gembox-typography
+description: >-
+  Gembox Typography. Notion + Figma. Load with parent gembox-design-system when using this UI.
+---
+
+# Typography
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | [Typography](https://www.notion.so/24150ba3919d8053a84edbbf754bd676) |
+| **Figma page** | [Typography](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=3-3) (`3:3`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `3:3` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules (from Notion)
+
+DM Sans; modular scale xs–6xl; max line length 45rem; one Title 3XL per page.
+
+=== FILE: .cursor/skills/gembox-upload-download/SKILL.md ===
+---
+name: gembox-upload-download
+description: >-
+  Gembox Upload / Download (Figma page). Load with parent gembox-design-system; Notion doc pending.
+---
+
+# Upload / Download
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | — *No Notion page yet; Figma page is authoritative.* |
+| **Figma page** | [Upload / Download](https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=9841-92425) (`9841:92425`) |
+
+### Build steps
+1. Always load parent `gembox-design-system` first.
+2. `get_metadata` with `fileKey` `IgohaddARKIJHihXX0OE4Z` and `nodeId` `9841:92425` — scan this page for the **main** component set (skip Deprecated).
+3. `get_design_context` on that set for measurements and assets.
+
+## Rules
+
+Figma page is the source of truth until a Notion doc exists. Do not invent variants or spacing — resolve the main component set on this page via `get_metadata` then `get_design_context`.
+
+=== FILE: .cursor/skills/gembox-voice-and-tone/SKILL.md ===
+---
+name: gembox-voice-and-tone
+description: >-
+  Gembox Voice and Tone. Documentation — applies across UI. Load with parent gembox-design-system.
+---
+
+# Voice and Tone
+
+## Sources
+
+| | |
+|---|---|
+| **Notion** | [Voice and Tone](https://www.notion.so/35f50ba3919d81b5bf7bff85781fd1ff) |
+| **Figma** | — (cross-cutting; use component pages for pixels) |
+
+## Notes
+
+No dedicated Figma page in Gembox Components. Summary for Voice and Tone also appears in parent `gembox-design-system` where applicable.

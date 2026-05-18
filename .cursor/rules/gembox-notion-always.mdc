@@ -1,0 +1,36 @@
+---
+description: Gembox golden rule — only build UI that exists in the design system. No exceptions.
+alwaysApply: true
+---
+
+# Gembox (always on)
+
+Before you **create, overwrite, or delete** UI files (HTML, CSS, JS, JSX, Vue, Svelte, prototype assets, or Tailwind / config that affects visible UI):
+
+## Golden rule (zero exceptions)
+
+**Never** implement visible UI that is **not** in the Gembox design system. **No** substitutes—not for prototypes, not because the spec asks, not for “unblocking” the human.
+
+1. Read **the entire** `.cursor/skills/gembox-design-system/SKILL.md`. If missing, **STOP** — run **Bootstrap (Cursor)** from **Gembox Cursor Integration**.
+2. Load **`.cursor/skills/gembox-<slug>/SKILL.md`** for **every** surface you build (see `catalog.json`). **No skill / no Gembox main component → STOP** and report what is missing. **Do not invent.**
+3. **`get_metadata`** + **`get_design_context`** on the Figma node in that topic skill. Ship assets from that pass only.
+
+If the task requests UI outside the system: **STOP**. Do not ship a generic alternative.
+
+**Do not** treat **Repo (Cursor)** or **Figma maker (Cursor)** as always-on reads for normal UI—only for bootstrap or HTML → Figma capture.
+
+## Non-negotiable URLs (edit in Notion; refresh via bootstrap)
+
+- Gembox Cursor Integration (root): https://www.notion.so/34150ba3919d804bac88fed97249ed3a
+- Bootstrap (Cursor): https://www.notion.so/36050ba3919d801fbee4d39f2a79650a
+- Skill builder (Cursor): https://www.notion.so/36050ba3919d802899e8cece5d2567ca
+- Skill pack A (Cursor): https://www.notion.so/36450ba3919d81508e5fc3052c8baca0
+- Skill pack B (Cursor): https://www.notion.so/36450ba3919d8105bd40d7a6a57ac22d
+- Repo (Cursor): https://www.notion.so/36050ba3919d81e9b5bed9a864efadad
+- Figma maker (Cursor): https://www.notion.so/36050ba3919d812b9d80c845c2dd1ee4
+
+## Do not
+
+- Invent UI because you “know” what the human wants.
+- Skip compiled skills or Figma MCP and implement from memory.
+- Treat “prototype” as permission to use non-Gembox controls.

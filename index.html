@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo — Gembox prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="config/gembox-tokens.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Gembox / Site Banner — Severity=Warning: https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=5942-8423 -->
+    <header class="site-banner" id="site-banner" role="banner">
+      <div class="site-banner__inner">
+        <div class="site-banner__icon" aria-hidden="true">
+          <img
+            src="assets/gembox/site-banner-warning-icon.svg"
+            alt=""
+            width="32"
+            height="32"
+          />
+        </div>
+        <p class="site-banner__text">Prototype internal use only</p>
+        <button
+          type="button"
+          class="site-banner__close"
+          id="site-banner-close"
+          aria-label="Dismiss banner"
+        >
+          <img src="assets/gembox/site-banner-close.svg" alt="" width="30" height="30" />
+        </button>
+      </div>
+    </header>
+
+    <!-- Gembox / Modal — Size=xs: https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=2102-111558 -->
+    <!-- Gembox / Modal page: https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=129-1503 -->
+    <div class="gate-overlay" id="gate-overlay" role="presentation">
+      <dialog class="gate-modal" id="gate-dialog" aria-labelledby="gate-title" open>
+        <button
+          type="button"
+          class="gate-modal__close"
+          id="gate-modal-close"
+          aria-label="Close"
+          hidden
+        >
+          <img src="assets/gembox/modal-close.svg" alt="" width="12" height="12" />
+        </button>
+        <h1 class="gate-modal__title" id="gate-title">Prototype access</h1>
+        <form class="gate-modal__body" id="gate-form" novalidate>
+          <!-- Gembox / Input — State=Default: https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=9690-8315 -->
+          <div class="gate-input">
+            <label class="gate-input__label" for="gate-email">Email Address</label>
+            <input
+              class="gate-input__field"
+              id="gate-email"
+              name="email"
+              type="text"
+              autocomplete="email"
+              required
+            />
+            <p class="gate-input__error" id="gate-error" hidden></p>
+          </div>
+          <div class="gate-modal__actions">
+            <!-- Gembox / Button — Primary: https://www.figma.com/design/IgohaddARKIJHihXX0OE4Z/Gembox-Components?node-id=7027-24415 -->
+            <button type="submit" class="gate-button" id="gate-submit">Continue</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
+
+    <main class="app-main" id="app-main" hidden></main>
+
+    <script src="gate.js"></script>
+  </body>
+</html>
