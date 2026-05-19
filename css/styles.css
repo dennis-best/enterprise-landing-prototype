@@ -341,8 +341,36 @@ body {
 .elp-hero__visual {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-width: 0;
+}
+
+/* Hero only: Hiring-8 at 320px wide, natural height (prototype override) */
+.elp-hero__visual .gb-illustration--lg {
+  width: 320px;
+  height: auto;
+  max-width: 320px;
+  max-height: none;
+  overflow: visible;
+}
+
+.elp-hero__visual .gb-illustration__stage {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.elp-hero__visual .gb-illustration__group {
+  position: relative;
+  inset: auto;
+  width: 77.28%;
+  margin: 0 11.36%;
+  height: 0;
+  padding-bottom: 124.15%;
+}
+
+.elp-hero__visual .gb-illustration__layer img {
+  object-fit: contain;
 }
 
 /* Gembox Illustrations — Hiring-8 lg (13667:18571), 320×320 */
