@@ -1,11 +1,11 @@
 /* generated from Figma, date 2026-05-18 */
-/* get_variable_defs — fileKey IgohaddARKIJHihXX0OE4Z (merged from nodes 5942:8423, 2102:111558, 9690:8315, 7027:24415) */
+/* get_variable_defs — fileKey IgohaddARKIJHihXX0OE4Z */
 
 :root {
   --font-size-7: 16px;
   --font-weight-normal: Regular;
-  --palette-purple-000: #F8F5FF;
-  --palette-purple-400: #7E50E9;
+  --palette-purple-000: #f8f5ff;
+  --palette-purple-400: #7e50e9;
   --semantic-ui-black: #000000;
   --spacing-lg: 20px;
   --spacing-md: 16px;
@@ -15,4 +15,9 @@
   --ui-warn-background: #fffdf5;
   --ui-warn-primary: #be5700;
   --ui-white: #ffffff;
+  --ui-subtle: #737373;
+  --ui-background: #fbfbfb;
+  --semantic-ui-action-emphasis: #144c8b;
+  --semantic-ui-action-support: #76adeb;
+  --font-size-8: 26px;
 }

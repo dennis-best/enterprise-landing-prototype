@@ -29,8 +29,14 @@ Example: user asks for a **banner** → load **`gembox-banner`** + **this** skil
 1. **This skill** (golden rule first).
 2. **Topic skill** for each surface (`gembox-button`, `gembox-slat`, …). Missing skill → **STOP**.
 3. **`get_design_context`** on the Figma node in that topic skill.
-4. **Tokens** from `config/gembox-tokens.css` (regenerate from Figma when unsure).
+4. **Tokens** from `css/tokens.css` (regenerate from Figma when unsure).
 5. **Icons / illustrations** only from Gembox libraries or Illustrations file—check in MCP assets.
+
+## Prototype stack (required)
+
+- **Vanilla HTML, CSS, JavaScript** only unless the human explicitly requests another stack.
+- **Local run:** double-click **`index.html`** — no npm install, no dev server.
+- **Layout:** `index.html`, `css/styles.css`, `css/tokens.css`, `js/main.js`, `assets/` with relative paths.
 
 ## Bootstrap & repository paths
 
@@ -70,9 +76,9 @@ Say "Jimbox" in speech if you want — **write Gembox** in docs and commits.
 ## Operational rules (bootstrap)
 
 - **Scope:** Interactive UI prototyping unless the human explicitly asks for production shipping code.
-- **Step 0:** `config/gembox-tokens.css` is generated from Gembox Figma variables (`get_variable_defs` on `IgohaddARKIJHihXX0OE4Z`). Regenerate when missing or stale—do not invent hex in components.
+- **Step 0:** `css/tokens.css` is generated from Gembox Figma variables (`get_variable_defs` on `IgohaddARKIJHihXX0OE4Z`). Regenerate when missing or stale—do not invent hex in components.
 - **Figma wins** on pixels; Notion wins on usage/copy. Dev Mode CSS on main components beats MCP layout guesses.
-- **Prototype gate:** Default `index.html` = Site Banner (“Prototype internal use only”) + modal with one **Email Address** field; `sessionStorage` until tab ends; case-insensitive substring match configured in JS only (no password field unless asked).
+- **Default scaffold:** Site Banner (“Prototype internal use only”) + empty `<main>` unless the task includes full page markup. **Gate modal** only when the human asks (see **Repo (Cursor)**).
 - **Icons:** Org Figma icon libraries only—check in SVG from MCP assets; preserve Figma names.
 - **STOP** if UI is not in catalog + topic skill + Figma main—no substitutes.
 - **Full policy:** https://www.notion.so/36050ba3919d802899e8cece5d2567ca (Skill builder Part B).

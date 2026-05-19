@@ -11,7 +11,7 @@ Before you **create, overwrite, or delete** UI files (HTML, CSS, JS, JSX, Vue, S
 
 **Never** implement visible UI that is **not** in the Gembox design system. **No** substitutes—not for prototypes, not because the spec asks, not for “unblocking” the human.
 
-1. Read **the entire** `.cursor/skills/gembox-design-system/SKILL.md`. If missing, **STOP** — run **Bootstrap (Cursor)** from **Gembox Cursor Integration**.
+1. Read **the entire** `.cursor/skills/gembox-design-system/SKILL.md`. If missing, **STOP** — human pastes **`gembox setup`**; agent runs **Bootstrap (Cursor)** per **Gembox Cursor Integration**.
 2. Load **`.cursor/skills/gembox-<slug>/SKILL.md`** for **every** surface you build (see `catalog.json`). **No skill / no Gembox main component → STOP** and report what is missing. **Do not invent.**
 3. **`get_metadata`** + **`get_design_context`** on the Figma node in that topic skill. Ship assets from that pass only.
 

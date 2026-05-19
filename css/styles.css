@@ -1,0 +1,647 @@
+@import url("./tokens.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--font-size-7);
+  font-variation-settings: "opsz" 9;
+  color: var(--ui-text);
+  background: var(--ui-white);
+}
+
+/* Site Banner — Warning (5942:8423) */
+.site-banner {
+  background: var(--ui-warn-background);
+  padding: var(--spacing-md);
+  width: 100%;
+}
+
+.site-banner[hidden] {
+  display: none !important;
+}
+
+.site-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  padding-inline: 40px 36px;
+}
+
+.site-banner__icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.site-banner__icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.site-banner__text {
+  margin: 0;
+  max-width: 720px;
+  text-align: center;
+  line-height: 24px;
+  color: var(--ui-warn-primary);
+  font-weight: 400;
+}
+
+.site-banner__close {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.site-banner__close img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Gembox Button — 7027:24415 */
+.gb-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.gb-button__inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.gb-button--primary .gb-button__inner {
+  min-height: 42px;
+  padding: 0 20px;
+  font-size: var(--font-size-7);
+  font-weight: 500;
+  line-height: 16px;
+  font-variation-settings: "opsz" 14;
+  color: var(--ui-white);
+  background: var(--ui-action-primary);
+  border: 2px solid var(--ui-action-primary);
+}
+
+/* Hero — 7027:24169 Primary, 7027:24115 Secondary */
+.gb-button--primary-hero,
+.gb-button--secondary-hero {
+  border: 1px solid var(--ui-action-primary);
+  border-radius: 6px;
+}
+
+.gb-button--primary-hero .gb-button__inner {
+  min-height: 60px;
+  padding: 0 26px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 22px;
+  font-variation-settings: "opsz" 14;
+  color: var(--ui-white);
+  background: var(--ui-action-primary);
+  border: 2px solid var(--ui-action-primary);
+}
+
+.gb-button--secondary-hero .gb-button__inner {
+  min-height: 60px;
+  padding: 0 26px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 22px;
+  font-variation-settings: "opsz" 14;
+  color: var(--ui-action-primary);
+  background: var(--ui-white);
+  border: 2px solid var(--ui-white);
+}
+
+.gb-button:focus-visible .gb-button__inner {
+  outline: 2px solid var(--ui-action-primary);
+  outline-offset: 2px;
+}
+
+/* Gembox Input — 9690:8315 */
+.gb-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 540px;
+  width: 100%;
+}
+
+.gb-input__label {
+  font-size: var(--font-size-7);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.32px;
+  color: var(--ui-text);
+}
+
+.gb-input__required {
+  color: #d95958;
+}
+
+.gb-input__field {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--ui-border);
+  border-radius: 6px;
+  font: inherit;
+  color: var(--ui-text);
+  background: var(--ui-white);
+}
+
+.gb-input__field--select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%233f3f3f' d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+
+.gb-input__field:focus {
+  outline: 2px solid var(--ui-action-primary);
+  outline-offset: 1px;
+}
+
+.gb-input__help {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--ui-subtle);
+}
+
+/* Enterprise landing — Demo frame 5:2 */
+.elp {
+  color: var(--ui-text);
+  background: var(--ui-white);
+}
+
+.elp-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: var(--spacing-lg);
+}
+
+.elp-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.elp-nav {
+  border-bottom: 1px solid var(--ui-border);
+  background: var(--ui-white);
+}
+
+.elp-nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px var(--spacing-lg);
+}
+
+.elp-nav__logo img {
+  display: block;
+  height: 32px;
+  width: auto;
+}
+
+.elp-nav__links {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.elp-nav__link {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: var(--font-size-7);
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ui-text);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.elp-nav__link--active {
+  color: var(--ui-action-primary);
+  border-bottom-color: var(--ui-action-primary);
+}
+
+.elp-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.elp-nav__signup,
+.elp-nav__signin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: var(--font-size-7);
+  font-weight: 500;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.elp-nav__signup {
+  color: var(--ui-white);
+  background: var(--ui-action-primary);
+}
+
+.elp-nav__signin {
+  color: var(--ui-action-primary);
+  background: transparent;
+}
+
+.elp-hero {
+  padding-block: 48px 64px;
+}
+
+.elp-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.elp-eyebrow {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--ui-subtle);
+}
+
+.elp-hero__title {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 4vw, 58px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 14;
+  color: var(--ui-text);
+}
+
+.elp-hero__lead {
+  margin: 0 0 28px;
+  max-width: 36rem;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-variation-settings: "opsz" 9;
+  color: var(--ui-subtle);
+}
+
+.elp-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.elp-hero__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.elp-hero__visual .gb-illustration--lg {
+  width: 320px;
+  height: 320px;
+}
+
+/* Gembox Illustrations — Hiring-8 lg (13667:18571) */
+.gb-illustration {
+  margin: 0;
+}
+
+.gb-illustration--lg {
+  width: 320px;
+  height: 320px;
+  max-width: 320px;
+  max-height: 320px;
+  flex-shrink: 0;
+}
+
+.gb-illustration__stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gb-illustration__layer {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.gb-illustration__layer--phone {
+  inset: 2% 22.39% 2.04% 21.48%;
+}
+
+.gb-illustration__layer--screen {
+  inset: 11.18% 27.58% 10.08% 30%;
+}
+
+.gb-illustration__layer--bag {
+  inset: 13.42% 41.31% 46.19% 11.36%;
+}
+
+.gb-illustration__layer--magnifier {
+  inset: 29.27% 11.36% 23.8% 46.46%;
+}
+
+.elp-panel {
+  padding-block: 56px;
+}
+
+.elp-panel--muted {
+  background: #fbfbfb;
+}
+
+.elp-section {
+  padding-block: 56px;
+}
+
+.elp-h2 {
+  margin: 0 0 24px;
+  font-size: clamp(1.5rem, 2.5vw, 32px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--semantic-ui-action-emphasis);
+}
+
+.elp-section__lead {
+  margin: -8px 0 32px;
+  max-width: 52rem;
+  line-height: 1.5;
+  color: var(--ui-subtle);
+}
+
+.elp-card {
+  background: var(--ui-white);
+  border: 1px solid var(--ui-border);
+  border-radius: 8px;
+}
+
+.elp-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.elp-stats__card {
+  padding: 24px;
+}
+
+.elp-stats__value {
+  margin: 0 0 8px;
+  font-size: clamp(1.75rem, 3vw, 40px);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--ui-action-primary);
+}
+
+.elp-stats__label {
+  margin: 0;
+  font-size: var(--font-size-7);
+  line-height: 1.5;
+  color: var(--ui-subtle);
+}
+
+.elp-logos {
+  overflow: hidden;
+  padding: 32px 0;
+  border-block: 1px solid var(--ui-border);
+}
+
+.elp-logos__viewport {
+  overflow: hidden;
+}
+
+.elp-logos__track {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: max-content;
+  padding-inline: var(--spacing-lg);
+  animation: elp-logo-scroll 40s linear infinite;
+}
+
+.elp-logos__img {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+@keyframes elp-logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.elp-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.elp-steps__card {
+  padding: 24px;
+}
+
+/* Gembox Regular Icons — circle-check (809:2691) */
+.gb-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  color: var(--ui-action-primary);
+}
+
+.gb-icon--32 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+.gb-icon__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.elp-steps__title {
+  margin: 0 0 8px;
+  font-size: var(--font-size-7);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--semantic-ui-action-emphasis);
+}
+
+.elp-steps__desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ui-subtle);
+}
+
+.elp-fit {
+  max-width: 52rem;
+}
+
+.elp-fit__lead {
+  margin: 0 0 24px;
+  line-height: 1.5;
+  color: var(--ui-subtle);
+}
+
+.elp-form-wrap {
+  padding-bottom: 80px;
+}
+
+.elp-form-card {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.elp-form-card__title {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--semantic-ui-action-emphasis);
+}
+
+.elp-form-card__lead {
+  margin: 0 0 24px;
+  line-height: 1.5;
+  color: var(--ui-subtle);
+}
+
+.elp-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.elp-form .gb-input {
+  max-width: none;
+}
+
+.elp-form-success {
+  margin: 0;
+  padding: var(--spacing-md);
+  border-radius: 6px;
+  background: var(--palette-purple-000);
+  color: var(--semantic-ui-action-emphasis);
+}
+
+.elp-form-success[hidden] {
+  display: none !important;
+}
+
+.elp-form[hidden] {
+  display: none !important;
+}
+
+.elp-footer {
+  padding: 32px var(--spacing-lg) 48px;
+  border-top: 1px solid var(--ui-border);
+  text-align: center;
+}
+
+.elp-footer p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ui-subtle);
+}
+
+@media (max-width: 1024px) {
+  .elp-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .elp-stats,
+  .elp-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .elp-nav__inner {
+    flex-wrap: wrap;
+  }
+
+  .elp-nav__links {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .elp-stats,
+  .elp-steps {
+    grid-template-columns: 1fr;
+  }
+}
