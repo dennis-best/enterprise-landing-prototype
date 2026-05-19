@@ -2,6 +2,10 @@
 
 Static **vanilla HTML/CSS/JS** prototype aligned to the Gembox design system and the [Demo Enterprise Landing Figma frame](https://www.figma.com/design/8q2oWbbhF5UiIgRXwuJL6M/Demo-Enterprise-Landing-%E2%80%94-Prototype-Frames?node-id=5-2).
 
+## Live site
+
+**https://dennis-best.github.io/enterprise-landing-prototype/**
+
 ## Run locally (no install, no server)
 
 1. Open this folder on your Mac: `Projects/demo` (or wherever you cloned it).
@@ -25,61 +29,13 @@ There is **no prototype gate** — the page loads immediately.
 
 ## GitHub Pages
 
-### Live URL (after you push to `main`)
+On every push to **`main`**, [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) copies `index.html`, `css/`, `js/`, and `assets/` to GitHub Pages (no npm build).
 
-If this repo is published as **`dennis-best/enterprise-landing-prototype`**:
-
-**https://dennis-best.github.io/enterprise-landing-prototype/**
-
-General pattern for your account:
-
-**`https://dennis-best.github.io/<repository-name>/`**
-
-| Repository | Pages URL |
-|------------|-----------|
-| `enterprise-landing-prototype` | https://dennis-best.github.io/enterprise-landing-prototype/ |
-| `demo-prototype` (older gate-only scaffold) | https://dennis-best.github.io/demo-prototype/ |
-
-### How deploy works
-
-On every push to **`main`**, [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) runs:
-
-1. Copies `index.html`, `css/`, `js/`, and `assets/` into `_site/`
-2. Adds `_site/.nojekyll` (so GitHub does not run Jekyll)
-3. Deploys via GitHub Actions — **no** npm install or build step
-
-You can also run the workflow manually: **Actions → Deploy GitHub Pages → Run workflow**.
-
-### One-time GitHub settings (if the site 404s)
-
-In the repo on GitHub: **Settings → Pages**
-
-1. **Build and deployment → Source:** **GitHub Actions** (not “Deploy from a branch”).
-2. **Visibility:** repo must be **public** (or your org must allow Pages for private repos).
-3. First deploy may require approving the **`github-pages`** environment: **Settings → Environments → github-pages → Required reviewers** (if enabled).
-
-After the first successful run, **Settings → Pages** shows the live URL.
-
-### Publish from this machine
-
-```bash
-cd /path/to/demo   # this repo root
-
-# If you have not linked GitHub yet:
-git remote add origin https://github.com/dennis-best/enterprise-landing-prototype.git
-
-git add index.html css/ js/ assets/ .github/workflows/deploy-pages.yml README.md
-git commit -m "Publish vanilla enterprise landing for GitHub Pages"
-git push -u origin main
-```
-
-Then open **Actions** on GitHub and wait for **Deploy GitHub Pages** to finish (about 30 seconds).
-
-### Repo links
-
-- **GitHub:** https://github.com/dennis-best/enterprise-landing-prototype
+- **Repo:** https://github.com/dennis-best/enterprise-landing-prototype
 - **Actions:** https://github.com/dennis-best/enterprise-landing-prototype/actions
 - **Pages settings:** https://github.com/dennis-best/enterprise-landing-prototype/settings/pages
+
+If the site 404s: **Settings → Pages → Source:** GitHub Actions; repo must be public.
 
 ## Gembox integration
 

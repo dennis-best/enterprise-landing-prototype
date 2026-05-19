@@ -345,39 +345,44 @@ body {
   min-width: 0;
 }
 
-.elp-hero__visual .gb-illustration--lg {
-  width: 320px;
-  height: 320px;
-}
-
-/* Gembox Illustrations — Hiring-8 lg (13667:18571) */
+/* Gembox Illustrations — Hiring-8 lg (13667:18571), 320×320 */
 .gb-illustration {
   margin: 0;
 }
 
 .gb-illustration--lg {
+  position: relative;
   width: 320px;
   height: 320px;
   max-width: 320px;
   max-height: 320px;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .gb-illustration__stage {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+}
+
+.gb-illustration__group {
+  position: absolute;
+  inset: 2% 11.36% 2.04% 11.36%;
 }
 
 .gb-illustration__layer {
   position: absolute;
+  pointer-events: none;
+}
+
+.gb-illustration__layer img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
   max-width: none;
-  object-fit: contain;
-  pointer-events: none;
 }
 
 .gb-illustration__layer--phone {
